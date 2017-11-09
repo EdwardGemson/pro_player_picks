@@ -1,0 +1,2 @@
+class OpggsController < ApplicationController
+end

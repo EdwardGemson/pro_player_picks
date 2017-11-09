@@ -1,0 +1,33 @@
+inherit_gem:
+  sanelint:
+    - config/default.yml
+
+Documentation:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/BlockLength:
+  Exclude:
+  - spec/**/*.rb
+
+RSpec/NestedGroups:
+  Max: 4
+
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+  - config.ru
+  - Gemfile
+  - Rakefile
+  - db/migrate/*
+  - db/schema.rb
+  - config/**/*
+  - bin/*
+  - script/*
+  - vendor/**/*
+  - node_modules/**/*
