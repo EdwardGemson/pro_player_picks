@@ -4,7 +4,7 @@ class CreateChampion < ActiveRecord::Migration[5.1]
     	t.integer :winrate, null: false
     	t.string :build, null: false
     	t.text :pro_player_ids, null: false
-    	t.timestamps, null: false
+    	t.timestamps null: false
     end
   end
 end
